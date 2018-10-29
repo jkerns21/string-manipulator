@@ -19,8 +19,13 @@ public class StringManipulator
 		int length = str.length();
 		length = length - 1;
 		char lastLetter = str.charAt(length);
+		System.out.println("The first letter is:  " + firstLetter + "\nThe number of words is:  " +
+							strLength + "\nThe last letter is: " + lastLetter);
 		
-		System.out.println("epic");
+		int half = strLength / 2;
+		String firstHalf = str.substring(0, half);
+		String secondHalf = str.substring(half);
+		System.out.println("\nThe first half is: " + firstHalf + "\n the second half is: " + secondHalf);
 		
 	}
 }
